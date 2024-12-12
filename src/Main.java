@@ -1,8 +1,19 @@
+import javax.swing.*;
+import java.awt.*;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        JFrame jf = new JFrame("Ingreso de personas");
+        jf.setContentPane(new form1().mainPanel);
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jf.setSize(800, 600);
+        jf.setPreferredSize(new Dimension(800, 600));
+        jf.pack();
+        jf.setVisible(true);
 
         Scanner sc = new Scanner(System.in);
 
@@ -34,6 +45,7 @@ public class Main {
             mascotas[i].cambiarValoresM();
             mascotas[i].mostrarMascotas();
         }
+
 
     }
 }

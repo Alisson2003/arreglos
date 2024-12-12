@@ -55,7 +55,7 @@ public class personas {
         System.out.println("Edad: " + edad);
     }
 
-    public void cambiarValores(String nombre, String apellido, String ciudad, int edad) {
+    public void cambiarValores() {
 
         setNombre(nombre);
         setApellido(apellido);
